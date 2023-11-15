@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Alimentación - HabitLife</title>
+    <title>HabitLife - Alimentación</title>
+    <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
-         body {
+        body {
             background-color: #000;
             color: #fff;
             font-family: 'Mulish', sans-serif;
@@ -35,21 +35,6 @@
             text-decoration: none;
             color: #fff;
             margin: 0 10px;
-        }
-
-        .banner {
-            background-image: url('imagenes/alimentacion.png');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            color: #fff;
-            padding: 25px 0;
-        }
-
-        .banner h1 {
-            font-size: 40px;
-            margin: 40px;
-            text-align: left;
         }
 
         .menu-bar {
@@ -80,41 +65,58 @@
             color: #ffffff;
         }
 
-        .registro-alimentacion {
-            max-width: 600px;
+        main {
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #000;
-            text-align: left;
-        }
-
-        .registro-alimentacion label {
-            font-size: 18px;
-        }
-
-        .registro-alimentacion input[type="text"],
-        .registro-alimentacion input[type="date"] {
-            width: 100%;
             padding: 10px;
-            border: none;
-            border-radius: 20px;
-            font-size: 16px;
-        }
-
-        .search-button {
-            background-color: #ff5c0f;
-            color: #fff;
-            padding: 10px 10px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 20px;
-        }
-
-        .mensaje-exito {
-            background-color: #009900;
-            color: #fff;
+            background-color: #000000;
             text-align: center;
-            display: none; 
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #frase {
+            text-align: left;
+            background-image: url('imagenes/alimentacion.png');
+            background-size: cover;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        #frase h2 {
+            font-size: 50px;
+            color: #fff;
+            background-color: transparent;
+            padding: 40px 0;
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .column {
+            flex: 0 1 calc(33.333% - 20px);
+            padding: 10px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #96E500;
+        }
+
+        .column p {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .column a {
+            text-decoration: none;
         }
 
         footer {
@@ -145,8 +147,8 @@
         <nav>
             <div class="menu-bar">
                 <a href="#" class="menu-item">Training</a>
-                <a href="malimentacion.html" class="menu-item" style="background-color: #96E500; color: #000;">
-                    Alimentacion</a>
+                <a href="malimentacion.html" class="menu-item"
+                    style="background-color: #96E500; color:  #000;">Alimentacion</a>
                 <a href="#" class="menu-item">Estudio</a>
                 <a href="#" class="menu-item">Mentalidad</a>
                 <a href="#" class="menu-item">Comunidad</a>
@@ -156,30 +158,10 @@
         </nav>
     </header>
     <main>
-        <div class="banner">
-            <h1>REGISTRO DE ALIMENTACIÓN</h1>
-        </div>
-        <div class="registro-alimentacion">
-            <form>
-                <div class="grupo">
-                    <label>Alimento Consumido</label>
-                    <input type="text" id="alimento" placeholder="Ej. Pollo">
-                </div>
-                <div class="grupo">
-                    <label>Cantidad</label>
-                    <input type="text" id="cantidad" placeholder="Ej. 200 g">
-                </div>
-                <div class="grupo">
-                    <label>Fecha</label>
-                    <input type="date" id="fecha" >
-                </div>
-                <button type="button" class="search-button" onclick="mostrarMensajeExito()">Guardar</button>
-                <a href="registroanterior.html" class="search-button">Registro Anterior</a>
-            </form>
-        </div>
-        <div class="mensaje-exito">
-            ¡Registro guardado con éxito!
-        </div>
+        <section id="frase">
+            <h2>Historial de registros</h2>
+            <a href="#"></a>
+        </section>
     </main>
     <footer>
         <a href="#">Acerca de</a>
@@ -189,14 +171,6 @@
         <a href="#">Ayuda</a>
         <p>2023 HabitLife. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        function mostrarMensajeExito() {
-                swal('Éxito.', 'Registro guardado.', 'success');
-        }
-    </script>
 </body>
 
 </html>
-
-

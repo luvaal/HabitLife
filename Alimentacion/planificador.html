@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HabitLife - Alimentación</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
     <style>
     body {
@@ -245,7 +246,7 @@
                         <option value="sabado">Sábado</option>
                         <option value="domingo">Domingo</option>
                     </select>
-                    <button type="button">Aceptar</button>
+                    <button type="button" onclick="mostrarMensajeExito()">Aceptar</button>
                 </form>
             </div>
         </section>
@@ -259,6 +260,16 @@
         <a href="#">Ayuda</a>
         <p>2023 HabitLife. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        function mostrarMensajeExito() {
+            swal({
+                title: "Guardado satisfactoriamente",
+                icon: "success",
+                button: "Continuar",
+            });
+
+        }
+    </script>
 </body>
 
 </html>

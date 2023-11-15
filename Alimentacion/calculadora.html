@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora - HabitLife</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
         body {
             background-color: #000;
@@ -88,13 +89,13 @@
             text-align: left;
         }
 
-        .seccion-izquierda,
-        .seccion-derecha {
+        .seccionizquierda,
+        .seccionderecha {
             flex: 1;
             padding: 20px;
         }
 
-        .barra-ingreso {
+        .barraingreso {
             width: 100%;
             padding: 10px;
             border: none;
@@ -103,7 +104,7 @@
             margin-bottom: 20px;
         }
 
-        .boton-aceptar {
+        .boton {
             background-color: #ff5c0f;
             color: #fff;
             padding: 10px 20px;
@@ -112,11 +113,17 @@
             cursor: pointer;
         }
 
-        .cuadro-adorno {
-            width: 50px;
-            height: 50px;
-            background-color: #ff5c0f;
+        .cuadroadorno {
+            width: 400px;
+            height: max-content;
+            background-color: #c9f96e;
             margin-top: 20px;
+            border-radius: 10%;
+            margin-left: 70px;
+            text-align: center;
+            padding: 10px;
+            color: #000;
+            font-size: 13px;
         }
 
         footer {
@@ -150,7 +157,8 @@
         <nav>
             <div class="menu-bar">
                 <a href="#" class="menu-item">Training</a>
-                <a href="malimentacion.html" class="menu-item" style="background-color: #96E500; color: #000;">Alimentacion</a>
+                <a href="malimentacion.html" class="menu-item"
+                    style="background-color: #96E500; color: #000;">Alimentacion</a>
                 <a href="#" class="menu-item">Estudio</a>
                 <a href="#" class="menu-item">Mentalidad</a>
                 <a href="#" class="menu-item">Comunidad</a>
@@ -164,15 +172,23 @@
             <h1>CALCULADORA</h1>
         </div>
         <div class="calculadora">
-            <div class="seccion-izquierda">
+            <div class="seccionizquierda">
                 <label>Talla</label>
-                <input type="text" class="barra-ingreso" placeholder="Ingrese la talla">
+                <input type="text" class="barraingreso" placeholder="Ingrese la talla">
                 <label>Peso</label>
-                <input type="text" class="barra-ingreso" placeholder="Ingrese el peso">
-                <button class="boton-aceptar">Aceptar</button>
+                <input type="text" class="barraingreso" placeholder="Ingrese el peso">
+                <button type="button" class="boton" onclick="mostrarMensajeExito()">Calcular IMC</button>
+
             </div>
-            <div class="seccion-derecha">
-                <div class="cuadro-adorno"></div>
+            <div class="seccionderecha">
+                <div class="cuadroadorno">
+                    <p>
+                        <stronng>¿Qué es el IMC?</stronng>
+                    </p>
+                    <p> El índice de masa corporal (IMC) es el peso de una persona en kilogramos dividido por el
+                        cuadrado de la estatura en metros. El IMC es un método de evaluación fácil y económico para la
+                        categoría de peso: bajo peso, peso saludable, sobrepeso, y obesidad.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -184,6 +200,17 @@
         <a href="#">Ayuda</a>
         <p>2023 HabitLife. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        function mostrarMensajeExito() {
+            swal({
+                title: "Proceso satisfactorio",
+                text: "Si deseas ver los resultados haz click en VER!",
+                icon: "success",
+                button: "VER!",
+            });
+
+        }
+    </script>
 </body>
 
 </html>
