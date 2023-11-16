@@ -79,7 +79,7 @@
             color: #ffffff;
         }
 
-        .registro-alimentacion {
+        .registronot {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
@@ -87,34 +87,7 @@
             text-align: left;
         }
 
-        .registro-alimentacion label {
-            font-size: 18px;
-        }
-
-        .registro-alimentacion input[type="text"],
-        .registro-alimentacion input[type="date"] {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            font-size: 16px;
-        }
-
-        .search-button {
-            background-color: #ff5c0f;
-            color: #fff;
-            padding: 10px 10px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 20px;
-        }
-
-        .mensaje-exito {
-            background-color: #009900;
-            color: #fff;
-            text-align: center;
-            display: none;
-        }
+    
 
         footer {
             background-color: #555;
@@ -174,10 +147,11 @@
         <nav>
             <div class="menu-bar">
                 <a href="#" class="menu-item">Training</a>
-                <a href="malimentacion.html" class="menu-item" style="background-color: #96E500; color: #000;">Alimentacion</a>
-                <a href="#" class="menu-item">Estudio</a>
+                <a href="malimentacion.html" class="menu-item"
+                    style="background-color: #96E500; color:  #000;">Alimentacion</a>
+                <a href="/Estudio/Estudio.html" class="menu-item">Estudio</a>
                 <a href="#" class="menu-item">Mentalidad</a>
-                <a href="#" class="menu-item">Comunidad</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
                 <div class="menu-item">Herramientas</div>
                 <div class="menu-item">Configuracion</div>
             </div>
@@ -231,13 +205,13 @@
             </div>
         </div>
 
-        <div class="registro-alimentacion">
+        <div class="registronot">
             <form>
                 <button type="button" class="notificacion-btn" onclick="mostrarNotificaciones()">Mostrar Notificaciones</button>
             </form>
         </div>
 
-        <div class="registro-alimentacion">
+        <div class="registronot">
             <form>
                 <button type="button" class="notificacion-btn" onclick="mostrarMasNotificaciones()">Mostrar Más Notificaciones</button>
             </form>
@@ -257,7 +231,7 @@
             var masNotificaciones = document.querySelector('.masnotificaciones');
             masNotificaciones.style.display = 'block';
 
-            var botonMostrar = document.querySelector('.registro-alimentacion .notificacion-btn');
+            var botonMostrar = document.querySelector('.registronot .notificacion-btn');
             botonMostrar.style.display = 'none';
         }
     </script>
