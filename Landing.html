@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HabitLife</title>
-    <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
     <link rel="stylesheet" href="css/misestilos.css" type="text/css">
     <style>
@@ -41,8 +40,15 @@
         #encabezado h2 {
             font-size: 35px;
             color: #fff;
-            padding: 40px 0;
-            margin-left: 30px;
+            padding: 5px 0;
+            margin-left: 40px;
+        }
+
+        #encabezado h4 {
+            font-size: 17px;
+            color: #fff;
+            margin-left: 45px;
+            font-weight: normal;
         }
 
         #encabezado a {
@@ -109,16 +115,16 @@
 
 <body>
     <header>
-        <h1>HabitLife</h1>
+        <img href="Landing.html" src="images/logo habit life.png" height="50" style="margin-left: 20px;">
         <i class="fas fa-search search-icon"></i>
         <nav>
             <div class="menu-bar">
                 <a href="#" class="menu-item">Training</a>
-                <a href="alimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Alimentación.html" class="menu-item">Alimentacion</a>
                 <a href="#" class="menu-item">Estudio</a>
                 <a href="#" class="menu-item">Mentalidad</a>
                 <a href="#" class="menu-item">Comunidad</a>
-                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Iniciar Sesión</div>
                 <div class="menu-item">Configuracion</div>
             </div>
         </nav>
@@ -126,99 +132,57 @@
     <main>
         <section id="encabezado">
             <h2>"Navega, Inspira y Actúa"</h2>
-            <a href="#">COMIENZA AHORA</a>
+            <h4>Tu viaje de transformación empieza ahora.</h4>
+            <a href="InicioSesion.html">COMIENZA AHORA</a>
         </section>
         <div class="container">
                 <div class="column">
                     <section>
-                        <h3>Daily Tasks</h3>
+                        <h1>Daily Tasks</h1>
                         <ul>
                             <li>
                               <input type="checkbox" id="item1" name="checklist">
-                              <label for="item1" class="checkbox-label">Tarea 1</label>
+                              <label for="item1" class="checkbox-label">Ir al gimnasio</label>
                             </li>
                             <li>
                               <input type="checkbox" id="item2" name="checklist">
-                              <label for="item2" class="checkbox-label">Tarea 2</label>
+                              <label for="item2" class="checkbox-label">Terminar IHC</label>
                             </li>
                             <li>
                               <input type="checkbox" id="item3" name="checklist">
-                              <label for="item3" class="checkbox-label">Tarea 3</label>
+                              <label for="item3" class="checkbox-label">Lectura del día</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="item3" name="checklist">
-                                <label for="item3" class="checkbox-label">Tarea 4</label>
+                                <label for="item3" class="checkbox-label">Meditación</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="item3" name="checklist">
-                                <label for="item3" class="checkbox-label">Tarea 5</label>
+                                <label for="item3" class="checkbox-label">Estudiar </label>
                             </li>
                               
                         </ul>
                     </section>
                 </div>
-                <div class="column">
+                <div class="column4">
                     <section>
-                        <h3>Ejercicio reciente</h3>
-                        <img class="svg-icon" src="images/running svg.svg" height="70" style="margin-top: 60px;">
-                        <p style="margin-top: 20px;"> No hay ejercicios recientes</p>
-                        <p> Registra ejercicios para medir tu rendimiento y calibrar tus mejoras a lo largo del tiempo</p>
+                        <h1>Nuestra Misión</h1>
+                        <p>Descubre el poder transformador de los hábitos saludables con HabitLife. Nos dedicamos a simplificar y personalizar tu viaje hacia una vida más saludable, proporcionándote herramientas, consejos respaldados por la ciencia y una comunidad comprometida. Creemos que la salud va más allá de la ausencia de enfermedad, es un bienestar integral que abraza cuerpo, mente y espíritu. Únete a nosotros para establecer y consolidar hábitos adaptados a tu estilo de vida, celebrar logros juntos y construir una comunidad dedicada a la búsqueda colectiva de una vida más plena.</p>
                     </section>
                 </div>
-                <div class="column">
+                <div class="column5">
                     <section>
-                        <img class="svg-icon" src="images/balanza.svg" height="70" style="margin-top: 20px;">
-                        <h3>75 KG</h3>
-                        <img class="svg-icon" src="images/agua botella.svg" height="70" style="margin-top: 20px;">
-                        <h3>1.893 ml</h3>
-                        <p>por beber</p>
+                        <h1>Sobre los hábitos saludables</h1>
+                        <p style="float: left; width: 70%;">La adopción de hábitos saludables es fundamental para alcanzar un estilo de vida equilibrado y pleno. Integrar pequeñas rutinas diarias, como beber suficiente agua, realizar ejercicio regularmente, mantener una dieta nutritiva y asegurarse de obtener un buen descanso nocturno, puede marcar una gran diferencia en nuestra salud física y mental. Únete a nosotros en el viaje hacia una vida más saludable y descubre cómo pequeños cambios pueden tener un impacto significativo en tu bienestar general.</p>
+                        <img src="images/Sobreloshábitos.jpg" height="150" style="float: right;">
                     </section>
                 </div>
-                <div class="column">
-                    <section>
-                        <img class="svg-icon" src="images/fire-svgrepo-com.svg" height="70" style="margin-top: 10px;">
-                        <h3>69</h3>
-                        <p>calorías</p>
-                        <img class="svg-icon" src="images/cutlery-restaurant-svgrepo-com.svg" height="70" style="margin-top: 10px;">
-                        <h3>1.827 cal</h3>
-                        <p>por ingerir</p>
-                    </section>
-                </div>
-                <div class="column">
-                    <section>
-                        <img src="images/calendario.png" height="170" style="margin-top: 50px;">
-                    </section>
-                </div>
-                <div class="column">
-                    <section>
-                        <h3>RETO MENSUAL</h3>
-                        <img class="svg-icon" src="images/trophy-svgrepo-com.svg" height="50">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque, magnam numquam qui rem commodi sapiente, suscipit in quisquam omnis aliquam, quaerat architecto. Voluptatum recusandae expedita libero aperiam unde. Earum?</p>
-                    </section>
-                </div>
-                <div class="column">
-                    <section>
-                        <h3>TENDENCIA</h3>
-                        <img src="images/tendencia 1.jpg" height="100">
-                        <img src="images/tendencia 2.jpg" height="100" style="margin-top: 20px;">
-                    </section>
-                </div>
-                <div class="column">
-                    <section>
-                        <h3 style="color:#fff; text-align: left; margin-top: 60px; font-size:15px">@Nombre de usuario</h3>
-                        <p style="text-align: justify; font-size:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, esse praesentium? Molestias eos consequuntur molestiae! Ut, minima accusantium magnam expedita a doloribus</p>
-                        <h3 style="color:#fff; text-align: left; margin-top:30px; font-size:15px">@Nombre de usuario</h3>
-                        <p style="text-align: justify; font-size:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, esse praesentium? Molestias eos consequuntur molestiae! Ut, minima accusantium magnam expedita a doloribus</p>
-                    </section>
-                </div>
-                <section id="puntuacion">
-                    <h3> PUNTUACIÓN ACTUAL</h3>
-                    <p>1000</p>
-                </section>
+            
                 
         </div>
     </main>
     <footer>
+        <img src="images/logo habit life.png" height="30" style="margin-right: 20px; margin-top: 40px;">
         <a href="#">Acerca de</a>
         <a href="#">Explorar</a>
         <a href="#">Community</a>
